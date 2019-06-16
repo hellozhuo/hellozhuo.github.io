@@ -1216,6 +1216,69 @@ pre .javascript .function {
 .use-motion .menu-item {
   opacity: 0;
 }
+.github-corner :hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+.github-corner > svg {
+  fill: #222;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  border: 0;
+  right: 0;
+}
+@media (max-width: 991px) {
+  .github-corner .github-corner:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+}
+@-moz-keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    transform: rotate(10deg);
+  }
+}
+@-webkit-keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    transform: rotate(10deg);
+  }
+}
+@-o-keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    transform: rotate(10deg);
+  }
+}
+@keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    transform: rotate(10deg);
+  }
+}
 .post-body {
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -1623,6 +1686,53 @@ pre .javascript .function {
 .fancybox-close:hover {
   border: none;
 }
+.post-widgets {
+  border-top: 1px solid #eee;
+  padding-top: 9px;
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.post-widgets .post-meta-divider {
+  height: 25px;
+  color: #999;
+}
+.wp_rating {
+  height: 20px;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 20px;
+  padding-top: 6px;
+}
+.social-like {
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.vk_like {
+  width: 85px;
+  height: 21px;
+  padding-top: 7px;
+  align-self: center;
+}
+.fb_like {
+  height: 30px;
+  align-self: center;
+}
+.bdsharebuttonbox {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.bdsharebuttonbox a {
+  border: none;
+}
+.bdshare-slide-button-box a {
+  border: none;
+}
 .rtl.post-body p,
 .rtl.post-body a,
 .rtl.post-body h1,
@@ -1639,6 +1749,16 @@ pre .javascript .function {
 }
 .rtl.post-title {
   font-family: UKIJ Ekran;
+}
+.reading-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #37c6c0;
 }
 .sidebar {
   position: fixed;
@@ -1765,7 +1885,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2b73d5;
+  background: #7c8aff;
 }
 .feed-link,
 .chat {
@@ -2122,6 +2242,29 @@ pre .javascript .function {
   top: 50%;
   transform: translate(-50%, -50%);
   color: #ccc;
+}
+#needsharebutton-postbottom {
+  position: relative;
+  cursor: pointer;
+  height: 26px;
+}
+#needsharebutton-postbottom .btn {
+  display: initial;
+  padding: 1px 4px;
+  border: 1px solid #222;
+  border-radius: 3px;
+}
+#needsharebutton-float {
+  position: fixed;
+  bottom: 38px;
+  left: -8px;
+  z-index: 9999;
+  cursor: pointer;
+}
+#needsharebutton-float .btn {
+  padding: 0 10px 0 14px;
+  border: 1px solid #222;
+  border-radius: 4px;
 }
 .page-archive .archive-page-counter {
   position: relative;
