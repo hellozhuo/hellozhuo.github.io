@@ -33,6 +33,17 @@
     
     
     <entry>
+      <title></title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="About-me"><a href="#About-me" class="headerlink" title="About me"></a>About me</h1><p><strong>Bio:</strong> I am a PhD student in University of Oulu from 2018~2022<br><strong>Email:</strong> zuike2013@outlook.com</p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>tags</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
