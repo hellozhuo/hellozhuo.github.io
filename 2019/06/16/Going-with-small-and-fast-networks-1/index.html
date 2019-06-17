@@ -126,7 +126,7 @@
 <meta property="og:image" content="https://zhuogege1943.com/2019/06/16/Going-with-small-and-fast-networks-1/5.5.png">
 <meta property="og:image" content="https://zhuogege1943.com/2019/06/16/Going-with-small-and-fast-networks-1/6.1.png">
 <meta property="og:image" content="https://zhuogege1943.com/2019/06/16/Going-with-small-and-fast-networks-1/6.3.png">
-<meta property="og:updated_time" content="2019-06-17T19:24:58.640Z">
+<meta property="og:updated_time" content="2019-06-17T19:47:13.397Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Going with small and fast networks (1)">
 <meta name="twitter:description" content="OverviewIn this post, we are going to look at the following neural network models: MobileNet v1 &amp;amp; v2, SqueezeNet, ShuffleNet v1 &amp;amp; v2, NasNet. We consider the following questions:  What in the">
@@ -464,7 +464,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-06-17 22:24:58" itemprop="dateModified" datetime="2019-06-17T22:24:58+03:00">2019-06-17</time>
+                <time title="Modified: 2019-06-17 22:47:13" itemprop="dateModified" datetime="2019-06-17T22:47:13+03:00">2019-06-17</time>
               
             
           </span>
@@ -590,7 +590,7 @@ K\times K\times C_{in}\times C_{out}\times H\times W.
 <p><img src="/2019/06/16/Going-with-small-and-fast-networks-1/5.4.png" width="200"></p>
 <p>To further reduce model size and computation cost, ShuffleNet v1 also uses <code>BottleNeck</code>s as illustrated:</p>
 <p><img src="/2019/06/16/Going-with-small-and-fast-networks-1/5.5.png" width="600"></p>
-<p>As discussed above, MobileNet v2 and ShuffleNet v1 both focus on reducing computation cost on 1x1 convolutions, while there are still two more differences according to their structures. </p>
+<p>As discussed above, MobileNet v2 and ShuffleNet v1 both focus on reducing computation cost on 1x1 convolutions, while there are still three more differences according to their structures. </p>
 <ol>
 <li>Difference on how to apply residual. For MobileNet v2, no residual is used when the shape of input volume and output volume of a block doesn’t match. For ShuffleNet v1, when the two doesn’t match, a <code>AveragePool + Concatenation</code> strategy is used to do shortcut connection. </li>
 <li>According to the above diagrams, ShuffleNet v1 quickly downsamples the input image from 224x224 to 56x56, while MobileNet v1 only downsamples its input image to 112x112 in the first stages. </li>
