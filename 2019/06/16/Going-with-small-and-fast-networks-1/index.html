@@ -104,13 +104,13 @@
 
 
 
-  <meta name="description" content="OverviewIn this post, we are going to look at the following neural network models: MobileNet v1MobileNetv1 &amp;amp; v2MobileNetv2, SqueezeNetSqueezeNet, ShuffleNet v1ShuffleNetv1 &amp;amp; v2ShuffleNetv2, Na">
+  <meta name="description" content="OverviewIn this post, we are going to look at the following neural network models: MobileNet v11 &amp;amp; v22, SqueezeNet3, ShuffleNet v14 &amp;amp; v25, NasNet6. We consider the following questions:  What i">
 <meta name="keywords" content="Network compression,CNN">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Going with small and fast networks (1)">
 <meta property="og:url" content="https://zhuogege1943.com/2019/06/16/Going-with-small-and-fast-networks-1/index.html">
 <meta property="og:site_name" content="Zhuo&#39;s Blog">
-<meta property="og:description" content="OverviewIn this post, we are going to look at the following neural network models: MobileNet v1MobileNetv1 &amp;amp; v2MobileNetv2, SqueezeNetSqueezeNet, ShuffleNet v1ShuffleNetv1 &amp;amp; v2ShuffleNetv2, Na">
+<meta property="og:description" content="OverviewIn this post, we are going to look at the following neural network models: MobileNet v11 &amp;amp; v22, SqueezeNet3, ShuffleNet v14 &amp;amp; v25, NasNet6. We consider the following questions:  What i">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://zhuogege1943.com/2019/06/16/Going-with-small-and-fast-networks-1/mobilenetv1.png">
 <meta property="og:image" content="https://zhuogege1943.com/2019/06/16/Going-with-small-and-fast-networks-1/mobilenetv1_2.png">
@@ -126,10 +126,10 @@
 <meta property="og:image" content="https://zhuogege1943.com/2019/06/16/Going-with-small-and-fast-networks-1/5.5.png">
 <meta property="og:image" content="https://zhuogege1943.com/2019/06/16/Going-with-small-and-fast-networks-1/6.1.png">
 <meta property="og:image" content="https://zhuogege1943.com/2019/06/16/Going-with-small-and-fast-networks-1/6.3.png">
-<meta property="og:updated_time" content="2019-06-18T10:06:32.607Z">
+<meta property="og:updated_time" content="2019-06-18T10:38:05.796Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Going with small and fast networks (1)">
-<meta name="twitter:description" content="OverviewIn this post, we are going to look at the following neural network models: MobileNet v1MobileNetv1 &amp;amp; v2MobileNetv2, SqueezeNetSqueezeNet, ShuffleNet v1ShuffleNetv1 &amp;amp; v2ShuffleNetv2, Na">
+<meta name="twitter:description" content="OverviewIn this post, we are going to look at the following neural network models: MobileNet v11 &amp;amp; v22, SqueezeNet3, ShuffleNet v14 &amp;amp; v25, NasNet6. We consider the following questions:  What i">
 <meta name="twitter:image" content="https://zhuogege1943.com/2019/06/16/Going-with-small-and-fast-networks-1/mobilenetv1.png">
 
 
@@ -464,7 +464,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-06-18 13:06:32" itemprop="dateModified" datetime="2019-06-18T13:06:32+03:00">2019-06-18</time>
+                <time title="Modified: 2019-06-18 13:38:05" itemprop="dateModified" datetime="2019-06-18T13:38:05+03:00">2019-06-18</time>
               
             
           </span>
@@ -536,7 +536,7 @@
       
 
       
-        <h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><p>In this post, we are going to look at the following neural network models: MobileNet v1<sup><a href="#fn_MobileNetv1" id="reffn_MobileNetv1">MobileNetv1</a></sup> &amp; v2<sup><a href="#fn_MobileNetv2" id="reffn_MobileNetv2">MobileNetv2</a></sup>, SqueezeNet<sup><a href="#fn_SqueezeNet" id="reffn_SqueezeNet">SqueezeNet</a></sup>, ShuffleNet v1<sup><a href="#fn_ShuffleNetv1" id="reffn_ShuffleNetv1">ShuffleNetv1</a></sup> &amp; v2<sup><a href="#fn_ShuffleNetv2" id="reffn_ShuffleNetv2">ShuffleNetv2</a></sup>, NasNet<sup><a href="#fn_NasNet" id="reffn_NasNet">NasNet</a></sup>. We consider the following questions:</p>
+        <h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><p>In this post, we are going to look at the following neural network models: MobileNet v1<sup><a href="#fn_1" id="reffn_1">1</a></sup> &amp; v2<sup><a href="#fn_2" id="reffn_2">2</a></sup>, SqueezeNet<sup><a href="#fn_3" id="reffn_3">3</a></sup>, ShuffleNet v1<sup><a href="#fn_4" id="reffn_4">4</a></sup> &amp; v2<sup><a href="#fn_5" id="reffn_5">5</a></sup>, NasNet<sup><a href="#fn_6" id="reffn_6">6</a></sup>. We consider the following questions:</p>
 <ol>
 <li><p>What in the world do they look like?</p>
 </li>
@@ -629,23 +629,23 @@ K\times K\times C_{in}\times C_{out}\times H\times W.
 <p><img src="/2019/06/16/Going-with-small-and-fast-networks-1/6.3.png" width="700"></p>
 <h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>We have analysed several classical network compression models, from which we can see that the main strategy to reduce model size and computation cost is using <strong>Depth-wise convolution</strong>, <strong>Group convolution</strong> and <strong>Point-wise convolution</strong>. </p>
 <p>There other interesting algorithms like network pruning, network quantization (e.g., binarize weiths and activations) and Network architecture search. They also lead to fast and small network models and will be discussed in the next post. </p>
-<blockquote id="fn_MobileNetv1">
-<sup>MobileNetv1</sup>. <a href="https://arxiv.org/abs/1704.04861" target="_blank" rel="noopener">Howard, Andrew G., et al. “Mobilenets: Efficient convolutional neural networks for mobile vision applications.” arXiv preprint arXiv:1704.04861 (2017).</a><a href="#reffn_MobileNetv1" title="Jump back to footnote [MobileNetv1] in the text."> &#8617;</a>
+<h4 id="References"><a href="#References" class="headerlink" title="References"></a>References</h4><blockquote id="fn_1">
+<sup>1</sup>. <a href="https://arxiv.org/abs/1704.04861" target="_blank" rel="noopener">Howard, Andrew G., et al. “Mobilenets: Efficient convolutional neural networks for mobile vision applications.” arXiv preprint arXiv:1704.04861 (2017).</a><a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#8617;</a>
 </blockquote>
-<blockquote id="fn_MobileNetv2">
-<sup>MobileNetv2</sup>. <a href="https://arxiv.org/abs/1801.04381" target="_blank" rel="noopener">Sandler, Mark, et al. “Mobilenetv2: Inverted residuals and linear bottlenecks.” Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2018.</a><a href="#reffn_MobileNetv2" title="Jump back to footnote [MobileNetv2] in the text."> &#8617;</a>
+<blockquote id="fn_2">
+<sup>2</sup>. <a href="https://arxiv.org/abs/1801.04381" target="_blank" rel="noopener">Sandler, Mark, et al. “Mobilenetv2: Inverted residuals and linear bottlenecks.” Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2018.</a><a href="#reffn_2" title="Jump back to footnote [2] in the text."> &#8617;</a>
 </blockquote>
-<blockquote id="fn_SqueezeNet">
-<sup>SqueezeNet</sup>. <a href="https://arxiv.org/abs/1602.07360" target="_blank" rel="noopener">Iandola, Forrest N., et al. “SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and\&lt; 0.5 MB model size.” arXiv preprint arXiv:1602.07360 (2016).</a><a href="#reffn_SqueezeNet" title="Jump back to footnote [SqueezeNet] in the text."> &#8617;</a>
+<blockquote id="fn_3">
+<sup>3</sup>. <a href="https://arxiv.org/abs/1602.07360" target="_blank" rel="noopener">Iandola, Forrest N., et al. “SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and\&lt; 0.5 MB model size.” arXiv preprint arXiv:1602.07360 (2016).</a><a href="#reffn_3" title="Jump back to footnote [3] in the text."> &#8617;</a>
 </blockquote>
-<blockquote id="fn_ShuffleNetv1">
-<sup>ShuffleNetv1</sup>. <a href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Zhang_ShuffleNet_An_Extremely_CVPR_2018_paper.pdf" target="_blank" rel="noopener">Zhang, Xiangyu, et al. “Shufflenet: An extremely efficient convolutional neural network for mobile devices.” Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2018.</a><a href="#reffn_ShuffleNetv1" title="Jump back to footnote [ShuffleNetv1] in the text."> &#8617;</a>
+<blockquote id="fn_4">
+<sup>4</sup>. <a href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Zhang_ShuffleNet_An_Extremely_CVPR_2018_paper.pdf" target="_blank" rel="noopener">Zhang, Xiangyu, et al. “Shufflenet: An extremely efficient convolutional neural network for mobile devices.” Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2018.</a><a href="#reffn_4" title="Jump back to footnote [4] in the text."> &#8617;</a>
 </blockquote>
-<blockquote id="fn_ShuffleNetv2">
-<sup>ShuffleNetv2</sup>. <a href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Ningning_Light-weight_CNN_Architecture_ECCV_2018_paper.pdf" target="_blank" rel="noopener">Ma, Ningning, et al. “Shufflenet v2: Practical guidelines for efficient cnn architecture design.” Proceedings of the European Conference on Computer Vision (ECCV). 2018.</a><a href="#reffn_ShuffleNetv2" title="Jump back to footnote [ShuffleNetv2] in the text."> &#8617;</a>
+<blockquote id="fn_5">
+<sup>5</sup>. <a href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Ningning_Light-weight_CNN_Architecture_ECCV_2018_paper.pdf" target="_blank" rel="noopener">Ma, Ningning, et al. “Shufflenet v2: Practical guidelines for efficient cnn architecture design.” Proceedings of the European Conference on Computer Vision (ECCV). 2018.</a><a href="#reffn_5" title="Jump back to footnote [5] in the text."> &#8617;</a>
 </blockquote>
-<blockquote id="fn_NasNet">
-<sup>NasNet</sup>. <a href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Zoph_Learning_Transferable_Architectures_CVPR_2018_paper.pdf" target="_blank" rel="noopener">Zoph, Barret, et al. “Learning transferable architectures for scalable image recognition.” Proceedings of the IEEE conference on computer vision and pattern recognition. 2018.</a><a href="#reffn_NasNet" title="Jump back to footnote [NasNet] in the text."> &#8617;</a>
+<blockquote id="fn_6">
+<sup>6</sup>. <a href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Zoph_Learning_Transferable_Architectures_CVPR_2018_paper.pdf" target="_blank" rel="noopener">Zoph, Barret, et al. “Learning transferable architectures for scalable image recognition.” Proceedings of the IEEE conference on computer vision and pattern recognition. 2018.</a><a href="#reffn_6" title="Jump back to footnote [6] in the text."> &#8617;</a>
 </blockquote>
 
       
@@ -911,7 +911,7 @@ K\times K\times C_{in}\times C_{out}\times H\times W.
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Overview"><span class="nav-number">1.</span> <span class="nav-text">Overview</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MobileNet-v1-vs-Standard-CNN-models"><span class="nav-number">2.</span> <span class="nav-text">MobileNet v1 vs. Standard CNN models</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MobileNet-v1-vs-SqueezeNet"><span class="nav-number">3.</span> <span class="nav-text">MobileNet v1 vs. SqueezeNet</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MobileNet-v1-vs-MobileNet-v2"><span class="nav-number">4.</span> <span class="nav-text">MobileNet v1 vs. MobileNet v2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MobileNet-v2-vs-ShuffleNet-v1-vs-NasNet"><span class="nav-number">5.</span> <span class="nav-text">MobileNet v2 vs. ShuffleNet v1 vs. NasNet</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ShuffleNet-v2-vs-All"><span class="nav-number">6.</span> <span class="nav-text">ShuffleNet v2 vs. All</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Conclusion"><span class="nav-number">7.</span> <span class="nav-text">Conclusion</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Overview"><span class="nav-number">1.</span> <span class="nav-text">Overview</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MobileNet-v1-vs-Standard-CNN-models"><span class="nav-number">2.</span> <span class="nav-text">MobileNet v1 vs. Standard CNN models</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MobileNet-v1-vs-SqueezeNet"><span class="nav-number">3.</span> <span class="nav-text">MobileNet v1 vs. SqueezeNet</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MobileNet-v1-vs-MobileNet-v2"><span class="nav-number">4.</span> <span class="nav-text">MobileNet v1 vs. MobileNet v2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MobileNet-v2-vs-ShuffleNet-v1-vs-NasNet"><span class="nav-number">5.</span> <span class="nav-text">MobileNet v2 vs. ShuffleNet v1 vs. NasNet</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ShuffleNet-v2-vs-All"><span class="nav-number">6.</span> <span class="nav-text">ShuffleNet v2 vs. All</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Conclusion"><span class="nav-number">7.</span> <span class="nav-text">Conclusion</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#References"><span class="nav-number">7.0.1.</span> <span class="nav-text">References</span></a></li></ol></li></ol></div>
             
 
           </div>
