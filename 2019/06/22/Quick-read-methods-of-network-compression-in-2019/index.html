@@ -123,7 +123,7 @@
 <meta property="og:image" content="https://zhuogege1943.com/2019/06/22/Quick-read-methods-of-network-compression-in-2019/3.1.png">
 <meta property="og:image" content="https://zhuogege1943.com/2019/06/22/Quick-read-methods-of-network-compression-in-2019/4.1.png">
 <meta property="og:image" content="https://zhuogege1943.com/2019/06/22/Quick-read-methods-of-network-compression-in-2019/5.1.png">
-<meta property="og:updated_time" content="2019-06-22T19:53:22.893Z">
+<meta property="og:updated_time" content="2019-06-22T19:58:31.152Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Quick read: methods of network compression in 2019">
 <meta name="twitter:description" content="Overview Let’s quickly go through the new models related to network compression published at CVPR 2019, ICLR 2019 and ICML 2019. Some works needs to be read and understood more carefully. CVPR 2019 CV">
@@ -444,7 +444,7 @@
                 
               
 
-              <time title="Created: 2019-06-22 10:01:33 / Modified: 22:53:22" itemprop="dateCreated datePublished" datetime="2019-06-22T10:01:33+03:00">2019-06-22</time>
+              <time title="Created: 2019-06-22 10:01:33 / Modified: 22:58:31" itemprop="dateCreated datePublished" datetime="2019-06-22T10:01:33+03:00">2019-06-22</time>
             
 
             
@@ -665,8 +665,10 @@ For binary ResNet-18 on ImageNet, the authors use 78.6% filters but can achieve 
 <img src="/2019/06/22/Quick-read-methods-of-network-compression-in-2019/2.8.png" width="400"></li>
 </ul>
 <h3 id="10-haq-hardware-aware-automated-quantization-with-mixed-precision">10. HAQ: Hardware-Aware Automated Quantization with Mixed Precision<sup class="footnote-ref"><a href="#fn12" id="fnref12">[12]</a></sup></h3>
-<p>– Institutes: MIT (Song Han)<br>
-– Notes</p>
+<ul>
+<li>Institutes: MIT (Song Han)</li>
+<li>Notes</li>
+</ul>
 <ol>
 <li>Conventional quantization methods use the same number of bits for all layers, but as different layer have different redundancy and arithmetic behaviours (computation bounded or memory bounded), this strategy is sub-optimal and it’s necessary to use mixed precision for different layers.</li>
 <li>Because there are numerous possibilities of design polices (which determine the bitwidth of both weights and activations for each layer), the authors introduce the RL (Reinforcement Learning) agent to automatically determine the quantization policy, and take the hardware accelerator’s feedback in the design loop. So it is <em>Hardware-Aware</em> by considering latency, energy and storage on the target hardware directly instead of relying on proxy signals like FLOPs and model size.</li>
