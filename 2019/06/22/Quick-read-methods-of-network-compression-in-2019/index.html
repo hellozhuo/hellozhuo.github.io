@@ -122,7 +122,7 @@
 <meta property="og:image" content="https://zhuogege1943.com/2019/06/22/Quick-read-methods-of-network-compression-in-2019/2.8.png">
 <meta property="og:image" content="https://zhuogege1943.com/2019/06/22/Quick-read-methods-of-network-compression-in-2019/4.1.png">
 <meta property="og:image" content="https://zhuogege1943.com/2019/06/22/Quick-read-methods-of-network-compression-in-2019/5.1.png">
-<meta property="og:updated_time" content="2019-06-22T16:08:56.193Z">
+<meta property="og:updated_time" content="2019-06-22T16:18:31.817Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Quick read: methods of network compression in 2019">
 <meta name="twitter:description" content="Overview Let’s quickly go through the new models related to network compression published at CVPR 2019, ICLR 2019 and ICML 2019. Some works needs to be read and understood more carefully. CVPR 2019 CV">
@@ -443,7 +443,7 @@
                 
               
 
-              <time title="Created: 2019-06-22 10:01:33 / Modified: 19:08:56" itemprop="dateCreated datePublished" datetime="2019-06-22T10:01:33+03:00">2019-06-22</time>
+              <time title="Created: 2019-06-22 10:01:33 / Modified: 19:18:31" itemprop="dateCreated datePublished" datetime="2019-06-22T10:01:33+03:00">2019-06-22</time>
             
 
             
@@ -652,19 +652,16 @@ For binary ResNet-18 on ImageNet, we use 78.6% filters but can achieve slightly 
 <li>Using Architecture search to find fast and high-performance CNN model.</li>
 <li>Unlike previous models using FLOPs which are often inaccurate to evaluate model’s latency, they directly measure the read-world latency by executing the model on real mobile devices.<br>
 <img src="/2019/06/22/Quick-read-methods-of-network-compression-in-2019/2.7.png" width="400"></li>
-<li>Accomplish two trade-offs:</li>
+<li>Accomplish two trade-offs:
+<ul>
+<li>Accuracy &amp; Inference latency: Formulate the design problem as a multi-objective optimization problem considering the two things.</li>
+<li>Search space &amp; Layer diversity: Propose a novel factorized hierarchical search space (where each block in the stacked structure can be different, while layers in each block should be with the same structure)</li>
+</ul>
+</li>
 </ol>
 <ul>
-<li>
-<p>Accuracy &amp; Inference latency: Formulate the design problem as a multi-objective optimization problem considering the two things.</p>
-</li>
-<li>
-<p>Search space &amp; Layer diversity: Propose a novel factorized hierarchical search space (where each block in the stacked structure can be different, while layers in each block should be with the same structure)</p>
-</li>
-<li>
-<p>Results (On ImageNet)<br>
-<img src="/2019/06/22/Quick-read-methods-of-network-compression-in-2019/2.8.png" width="400"></p>
-</li>
+<li>Results (On ImageNet)<br>
+<img src="/2019/06/22/Quick-read-methods-of-network-compression-in-2019/2.8.png" width="400"></li>
 </ul>
 <h2 id="iclr-2019">ICLR 2019</h2>
 <h3 id="1-the-lottery-ticket-hypothesis-finding-sparse-trainable-neural-networks">1. The lottery ticket hypothesis: finding sparse, trainable neural networks<sup class="footnote-ref"><a href="#fn12" id="fnref12">[12]</a></sup></h3>
