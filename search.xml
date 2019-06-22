@@ -61,22 +61,22 @@
     
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title></title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1>About me</h1><p><strong>Bio:</strong> I am a PhD student in University of Oulu from 2018~2022<br><strong>Email:</strong> zuike2013@outlook.com</p>]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title></title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
-        <content type="html"><![CDATA[<h1>About me</h1><p><strong>Bio:</strong> I am a PhD student in University of Oulu from 2018~2022<br><strong>Email:</strong> zuike2013@outlook.com</p>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
