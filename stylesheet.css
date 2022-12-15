@@ -84,6 +84,17 @@ a {
   font-size: 14px
 }
 
+td {
+  padding-top:0px;
+  padding-bottom:0px;
+  padding-right:20px;
+  padding-left:20px
+}
+
+li {
+  margin: 5px 0;
+}
+
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;

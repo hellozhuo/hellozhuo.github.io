@@ -20,33 +20,199 @@
               <p style="text-align:center">
                 <name>Zhuo Su</name>
               </p>
-              <p>I am a final-year PhD candidate at <a href="https://www.oulu.fi/cmvs">Center for Machine Vision and Signal Analysis (CMVS)</a> in University of Oulu, Finland. My research interests include computer vision and machine learning. My doctoral thesis topic is efficient feature representation learning and its applications in computer vision.
+              <p>
+              I am a final-year PhD candidate supervised by <a href="http://lilyliliu.com/">Li Liu</a> at <a href="https://www.oulu.fi/cmvs">Center for Machine Vision and Signal Analysis (CMVS)</a> in University of Oulu, Finland. 
               </p>
               <p>
-              During my PhD training, I have visited AMLab, University of Amsterdam, working as a visiting researcher supervised by <a href="https://staff.fnwi.uva.nl/m.welling/">Max Welling</a>. Currently, I am a computer vision intern in the Embodied AI Lab at Intel, Germany, working with <a href="https://matthias.pw/">Matthias Müller</a>.
-                Before that, I received my master's degree and bachelor's degree from Beihang University in 2015 and 2018 respectively.
+              My research interests: Computer vision and Machine learning. 
+              </p>
+              <p>
+              My doctoral thesis is about efficient feature representation learning for computer vision, precisely:
+              <ul>
+                <li style="margin:0 0">Local binary pattern (LBP) and LBP inspired CNN modules for efficient visual representation learning.</li>
+                <li style="margin:0 0">Binary neural networks on regular (images) and irregular data (point clouds).</li>
+                <li style="margin:0 0">Dynamic networks and network pruning.</li>
+              </ul>
               </p>
               <p style="text-align:center">
                 <a href="mailto:zuike2013@outlook.com">Email</a> &nbsp/&nbsp
-                <a href="data/cv_zhuo_2022.pdf">CV</a> &nbsp/&nbsp
+                <a href="data/cv_zhuo_2023.pdf">CV</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?user=EgeikIgAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://github.com/zhuoinoulu">Github</a>
-                <a href="www.linkedin.com/in/zhuo-su-73a318147">LinkedIn</a> &nbsp/&nbsp
+                <a href="https://github.com/zhuoinoulu">Github</a> &nbsp/&nbsp
+                <a href="https://www.linkedin.com/in/zhuo-su-73a318147">LinkedIn</a>
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/zhuo.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/zhuo_circle.png" class="hoverZoomLink"></a>
+              <a href="images/zhuo.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/zhuo_circle.jpg" class="hoverZoomLink"></a>
             </td>
           </tr>
         </tbody></table>
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-				
-		  
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Experience and <span style="color:blue">Education</span> </heading>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="width:100%">
+              <p>
+              <ul>
+                <li>[09.2022 - 03.2023] Computer vision intern at Intel Labs, Germany, working with <a href="https://matthias.pw/">Matthias Müller</a>.</li>
+                <li>[10.2021 - 03.2022] Visiting researcher in AMLab, University of Amsterdam, supervised by <a href="https://staff.fnwi.uva.nl/m.welling/">Max Welling</a>.</li>
+                <li><span style="color:blue">[10.2018 - precent]</span> PhD candidate of Computer vision in University of Oulu.</li>
+                <li>[05.2018 - 07.2018] Software engineer in Samsung R&#38;D Institute, China-Beijing.</li>
+                <li>[01.2018 - 04.2018] Computer vision intern in Aihujing.com.</li>
+                <li><span style="color:blue">[09.2015 - 03.2018]</span> Master student in Beihang University (thesis: Salient object detection for single images, supervisor: Hong Zheng).</li>
+                <li><span style="color:blue">[09.2011 - 06.2015]</span> Bachelor student in Beihang University (area: Pattern recognition).</li>
+              </ul>
+              </p>
+            </td>
+            </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Publications (First author)</heading>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="svnet_stop()" onmouseover="svnet_start()">
+            <td style="width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='svnet_image'>
+                  <img src='images/svnet_after.jpg' width="160"></div>
+                <img src='images/svnet_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function svnet_start() {
+                  document.getElementById('svnet_image').style.opacity = "1";
+                }
+
+                function svnet_stop() {
+                  document.getElementById('svnet_image').style.opacity = "0";
+                }
+                svnet_stop()
+              </script>
+            </td>
+            <td style="width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2209.05924">
+                <papertitle>SVNet: Where SO(3) Equivariance Meets Binarization on Point Cloud Representation</papertitle>
+              </a>
+              <br>
+              <strong>Zhuo Su</strong>,
+              <a href="https://staff.fnwi.uva.nl/m.welling/">Max Welling</a>,
+              <a href="https://en.wikipedia.org/wiki/Matti_Pietik%C3%A4inen_(academic)">Matti Pietikäinen</a>, 
+              <a href="http://lilyliliu.com/">Li Liu</a>
+              <br>
+              <em>3DV (3D Vision)</em>, 2022
+              <br>
+              <a href="https://arxiv.org/abs/2209.05924">arxiv</a>
+              /
+              <a href="https://github.com/zhuoinoulu/svnet">code</a>
+              <p></p>
+              <p>SVNet is a general framework to construct 3D learning architectures with SO(3) equivariance and network binarization, with a novel dual use of scalar and vector features.
+              </p>
+            </td>
+          </tr>		
+
+          <tr onmouseout="pdc_stop()" onmouseover="pdc_start()">
+            <td style="width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='pdc_image'>
+                  <img src='images/pdc_after.jpg' width="160"></div>
+                <img src='images/pdc_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function pdc_start() {
+                  document.getElementById('pdc_image').style.opacity = "1";
+                }
+
+                function pdc_stop() {
+                  document.getElementById('pdc_image').style.opacity = "0";
+                }
+                pdc_stop()
+              </script>
+            </td>
+            <td style="width:75%;vertical-align:middle">
+              <a href="https://openaccess.thecvf.com/content/ICCV2021/html/Su_Pixel_Difference_Networks_for_Efficient_Edge_Detection_ICCV_2021_paper.html">
+                <papertitle>Pixel Difference Networks for Efficient Edge Detection</papertitle>
+              </a>
+              <br>
+              <strong>Zhuo Su</strong>,
+              <a>Wenzhe Liu</a>, 
+              <a href="https://sites.google.com/view/zitongyu">Zitong Yu</a>,
+              <a href="https://www.researchgate.net/profile/Dewen-Hu">Dewen Hu</a>,
+              <a href="http://liaoqing.me/">Qing Liao</a>,
+              <a href="https://scholar.google.com/citations?user=61b6eYkAAAAJ&hl=en">Qi Tian</a>,
+              <a href="https://en.wikipedia.org/wiki/Matti_Pietik%C3%A4inen_(academic)">Matti Pietikäinen</a>, 
+              <a href="http://lilyliliu.com/">Li Liu</a>
+              <br>
+              <em>ICCV (oral presentation)</em>, 2021
+              <br>
+              <a href="https://arxiv.org/abs/2108.07009">arxiv</a>
+              /
+              <a href="https://github.com/zhuoinoulu/pidinet">code</a>
+              <p></p>
+              <p>
+              PDC embeds traditional Local Binary Pattern (LBP) to convolutional operators to enable CNNs probe rich image gradient information.
+              </p>
+            </td>
+          </tr>		
+
+          <tr onmouseout="dgc_stop()" onmouseover="dgc_start()">
+            <td style="width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='dgc_image'>
+                  <img src='images/dgc_after.jpg' width="160"></div>
+                <img src='images/dgc_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function dgc_start() {
+                  document.getElementById('dgc_image').style.opacity = "1";
+                }
+
+                function dgc_stop() {
+                  document.getElementById('dgc_image').style.opacity = "0";
+                }
+                dgc_stop()
+              </script>
+            </td>
+            <td style="width:75%;vertical-align:middle">
+              <a href="https://link.springer.com/chapter/10.1007/978-3-030-58539-6_9">
+                <papertitle>Dynamic Group Convolution for Accelerating Convolutional Neural Networks</papertitle>
+              </a>
+              <br>
+              <strong>Zhuo Su</strong>,
+              <a href="https://scholar.google.com/citations?user=mHyFpxAAAAAJ&hl=en">Linpu Fang</a>, 
+              <a href="https://www.scholat.com/auwxkang.en">Wenxiong Kang</a>, 
+              <a href="https://en.wikipedia.org/wiki/Matti_Pietik%C3%A4inen_(academic)">Matti Pietikäinen</a>, 
+              <a href="http://lilyliliu.com/">Li Liu</a>
+              <br>
+              <em>ECCV (spotlight presentation)</em>, 2020
+              <br>
+              <a href="https://arxiv.org/abs/2007.04242">arxiv</a>
+              /
+              <a href="https://github.com/zhuogege1943/dgc">code</a>
+              <p></p>
+              <p>
+              Introducing dynamic execution in grouped convolution to enhance existing CNN backbones.
+              </p>
+            </td>
+          </tr>		
+
           <tr onmouseout="bird_stop()" onmouseover="bird_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
+            <td style="width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='bird_image'>
-                  <img src='images/bmvc2019_bird_after.png' width="160"></div>
+                  <img src='images/bmvc2019_bird_after.jpg' width="160"></div>
                 <img src='images/bmvc2019_bird_before.jpg' width="160">
               </div>
               <script type="text/javascript">
@@ -60,7 +226,7 @@
                 bird_stop()
               </script>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td style="width:75%;vertical-align:middle">
               <a href="https://bmvc2019.org/wp-content/papers/0268.html">
                 <papertitle>BIRD: Learning Binary and Illumination Robust Descriptor for Face Recognition</papertitle>
               </a>
@@ -70,14 +236,249 @@
               <a href="http://lilyliliu.com/">Li Liu</a>
               <br>
               <em>BMVC</em>, 2019
+              <br>
+              <a href="http://jultika.oulu.fi/files/nbnfi-fe202001131871.pdf">pdf</a>
+              /
+              <a href="https://github.com/zhuogege1943/bird-descriptor">code</a>
               <p></p>
               <p>
-              BIRD (Binary and Illumination Robust Descriptor) nicely balances the three criteria: distinctiveness, robustness, and computationally inexpensive cost for face representation.
+                BIRD (Binary and Illumination Robust Descriptor) nicely balances the three criteria: distinctiveness, robustness, and computationally inexpensive cost for face representation.
               </p>
             </td>
           </tr>		
           
+        </tbody></table>
 
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Publications (Co-author)</heading>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="dybnn_stop()" onmouseover="dybnn_start()">
+            <td style="width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='dybnn_image'>
+                  <img src='images/dybnn.jpg' width="160"></div>
+                <img src='images/dybnn.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function dybnn_start() {
+                  document.getElementById('dybnn_image').style.opacity = "1";
+                }
+
+                function dybnn_stop() {
+                  document.getElementById('dybnn_image').style.opacity = "0";
+                }
+                dybnn_stop()
+              </script>
+            </td>
+            <td style="width:75%;vertical-align:middle">
+              <a href="https://ieeexplore.ieee.org/abstract/document/9747328">
+                <papertitle>Dynamic Binary Neural Network by learning channel-wise thresholds</papertitle>
+              </a>
+              <br>
+              <a href="https://scholar.google.com/citations?user=UIbAv3wAAAAJ&hl=en">Jiehua Zhang</a>,
+              <strong>Zhuo Su</strong>,
+              <a href="https://www.researchgate.net/profile/Yanghe-Feng">Yanghe Feng</a>, 
+              <a href="http://www.homexinlu.com/">Xin Lu</a>, 
+              <a href="https://en.wikipedia.org/wiki/Matti_Pietik%C3%A4inen_(academic)">Matti Pietikäinen</a>, 
+              <a href="http://lilyliliu.com/">Li Liu</a>
+              <br>
+              <em>ICASSP</em>, 2022
+              <br>
+              <a href="https://arxiv.org/abs/2110.05185">arxiv</a>
+              <p></p>
+              <p>Using dynamic thresholds to boost binary neural networks.
+              </p>
+            </td>
+          </tr>		
+
+          <tr onmouseout="mediconv_stop()" onmouseover="mediconv_start()">
+            <td style="width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='mediconv_image'>
+                  <img src='images/mediconv.jpg' width="160"></div>
+                <img src='images/mediconv.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function mediconv_start() {
+                  document.getElementById('mediconv_image').style.opacity = "1";
+                }
+
+                function mediconv_stop() {
+                  document.getElementById('mediconv_image').style.opacity = "0";
+                }
+                mediconv_stop()
+              </script>
+            </td>
+            <td style="width:75%;vertical-align:middle">
+              <a href="https://www.bmvc2021-virtualconference.com/assets/papers/0145.pdf">
+                <papertitle>Median Pixel Difference Convolutional Network for Robust Face Recognition</papertitle>
+              </a>
+              <br>
+              <a href="https://scholar.google.com/citations?user=UIbAv3wAAAAJ&hl=en">Jiehua Zhang</a>,
+              <strong>Zhuo Su</strong>,
+              <a href="http://lilyliliu.com/">Li Liu</a>
+              <br>
+              <em>BMVC</em>, 2021
+              <br>
+              <a href="https://arxiv.org/abs/2205.15867">arxiv</a>
+              <p></p>
+              <p>A novel combination between MRELBP (a traditional LBP variant) and convolution to build robust CNNs for face recognition in noisy conditions.
+              </p>
+            </td>
+          </tr>		
+
+          <tr onmouseout="ladder_stop()" onmouseover="ladder_start()">
+            <td style="width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ladder_image'>
+                  <img src='images/ladder_after.jpg' width="160"></div>
+                <img src='images/ladder_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function ladder_start() {
+                  document.getElementById('ladder_image').style.opacity = "1";
+                }
+
+                function ladder_stop() {
+                  document.getElementById('ladder_image').style.opacity = "0";
+                }
+                ladder_stop()
+              </script>
+            </td>
+            <td style="width:75%;vertical-align:middle">
+              <a href="https://www.sciencedirect.com/science/article/pii/S0167865521003676">
+                <papertitle>Deep ladder reconstruction-classification network for unsupervised domain adaptation</papertitle>
+              </a>
+              <br>
+              <a href="https://scholar.google.com/citations?hl=en&user=Ka66t-kAAAAJ">Wanxia Deng</a>,
+              <strong>Zhuo Su</strong>,
+              <a>Qiang Qiu</a>,
+              <a href="https://www.researchgate.net/scientific-contributions/Ling-jun-Zhao-70792204">Lingjun Zhao</a>,
+              <a href="https://www.researchgate.net/lab/Gangyao-Kuang-Lab">Gangyao Kuang</a>,
+              <a href="https://en.wikipedia.org/wiki/Matti_Pietik%C3%A4inen_(academic)">Matti Pietikäinen</a>, 
+              <a href="https://scholar.google.com/citations?user=SnEN2NsAAAAJ&hl=en">Huaxin Xiao</a>,
+              <a href="http://lilyliliu.com/">Li Liu</a>
+              <br>
+              <em>Pattern Recognition Letters</em>, 2021
+              <p></p>
+              <p>Deep Ladder Reconstruction-Classification Network (DLaReC) is designed to learn cross-domain shared contents by suppressing domain-specific variations.
+              </p>
+            </td>
+          </tr>		
+
+          <tr onmouseout="cdc_stop()" onmouseover="cdc_start()">
+            <td style="width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='cdc_image'>
+                  <img src='images/cdc_after.jpg' width="160"></div>
+                <img src='images/cdc_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function cdc_start() {
+                  document.getElementById('cdc_image').style.opacity = "1";
+                }
+
+                function cdc_stop() {
+                  document.getElementById('cdc_image').style.opacity = "0";
+                }
+                cdc_stop()
+              </script>
+            </td>
+            <td style="width:75%;vertical-align:middle">
+              <a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Yu_Searching_Central_Difference_Convolutional_Networks_for_Face_Anti-Spoofing_CVPR_2020_paper.html">
+                <papertitle>Searching central difference convolutional networks for face anti-spoofing</papertitle>
+              </a>
+              <br>
+              <a href="https://sites.google.com/view/zitongyu">Zitong Yu</a>,
+              <a href="https://scholar.google.com/citations?user=q07NiEAAAAAJ&hl=en">Chenxu Zhao</a>,
+              <a href="https://scholar.google.com/citations?user=5VMNd7oAAAAJ&hl=en">Zezheng Wang</a>,
+              <a href="https://scholar.google.com/citations?user=EMEy3gwAAAAJ&hl=en">Yunxiao Qin</a>,
+              <strong>Zhuo Su</strong>,
+              <a href="https://www.oulu.fi/en/researchers/xiaobai-li">Xiaobai Li</a>,
+              <a href="http://www.f-zhou.com/">Feng Zhou</a>,
+              <a href="https://gyzhao-nm.github.io/Guoying/">Guoying Zhao</a>
+              <br>
+              <em>CVPR</em>, 2020
+              <br>
+              <a href="https://arxiv.org/abs/2003.04092">arxiv</a>
+              /
+              <a href="https://github.com/ZitongYu/CDCN">code</a>
+              <p></p>
+              <p>Central Difference Convolution (CDC) is able to capture intrinsic detailed patterns via aggregating both intensity and gradient information for face anti-spoofing.
+              </p>
+            </td>
+          </tr>		
+
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Activities</heading>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/Oulu_univ_logo.png' width="160">
+              </div>
+            </td>
+            <td style="width:75%;vertical-align:middle">
+              <p>
+              <strong>Teaching assistant in University of Oulu:</strong>
+              <ul>
+              <li>[Autumn 2022] TA of Deep Learning course (521153S-3003, <a href="http://lilyliliu.com/"><u>Li Liu</u></a>), along with <a href="https://scholar.google.com/citations?user=UIbAv3wAAAAJ&hl=en">Jiehua Zhang</a>, Shuzhou Sun, and  <a href="https://scholar.google.com/citations?hl=en&user=NWw-sj4AAAAJ">Huali Xu</a>.</li>
+              <li>[Autumn 2021] TA of Deep Learning course (521153S:3, <a href="http://lilyliliu.com/"><u>Li Liu</u></a>), along with <a href="https://scholar.google.com/citations?user=UIbAv3wAAAAJ&hl=en">Jiehua Zhang</a>, <a href="https://scholar.google.com/citations?hl=en&user=NWw-sj4AAAAJ">Huali Xu</a>, and <a href="https://lamhuynh.info/">Lam Huynh</a>.</li>
+              <li>[Autumn 2020] TA of Deep Learning course (521153S:2, <a href="http://lilyliliu.com/"><u>Li Liu</u></a>), along with <a href="https://lamhuynh.info/">Lam Huynh</a>,  <a href="https://www.oulu.fi/university/researcher/mohammad-tavakolian">Mohammad Tavakolian</a>, and Yawen Cui.</li>
+              <li>[Autumn 2019] TA of Deep Learning course (521153S, <a href="http://lilyliliu.com/"><u>Li Liu</u></a> and <a href="https://scholar.google.com/citations?user=ZAZFfwwAAAAJ&hl=en"><u>Jie Chen</u></a>), along with <a href="https://lamhuynh.info/">Lam Huynh</a>.</li>
+              <li>[Spring 2018] TA of Deep Learning course (521149S, <a href="http://lilyliliu.com/"><u>Li Liu</u></a> and <a href="https://scholar.google.com/citations?user=ZAZFfwwAAAAJ&hl=en"><u>Jie Chen</u></a>), along with <a href="https://lamhuynh.info/">Lam Huynh</a>.</li>
+              </ul>
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td align="center" style="padding:20px;width:25%;vertical-align:middle">
+							<heading>Invited <br>reviewer</heading>
+            </td>
+            <td width="75%" valign="middle">
+              <p>
+              <ul>
+                <li>Journals: IEEE Transactions on Pattern Analysis and Machine Intelligence, IEEE Transactions on Image Processing, IEEE Transactions on Circuits and Systems for Video Technology, Neurocomputing, Pattern Recognition Letters.</li>
+                <li>Conferences: CVPR, ECCV, AAAI, ICME, ICCV, ACCV, ICASSP.</li>
+              </ul>
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:60%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+              <td style="padding:30px">
+              <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=Dc32olF3IcI3HbqW3Bit2ZE_jl8apBDIkfrrX0z2Cqo'></script>
+              </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:right;font-size:small;">
+                Template from <a href="https://jonbarron.info/">Jon Barron</a>. Thanks!
+              </p>
+            </td>
+          </tr>
         </tbody></table>
 				
       </td>
