@@ -84,6 +84,42 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="scia_stop()" onmouseover="scia_start()">
+            <td style="width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='scia_image'>
+                  <img src='images/scia23_history.png' width=90%></div>
+                <img src='images/scia23_history.png' width=90%>
+              </div>
+              <script type="text/javascript">
+                function scia_start() {
+                  document.getElementById('scia_image').style.opacity = "1";
+                }
+
+                function scia_stop() {
+                  document.getElementById('scia_image').style.opacity = "0";
+                }
+                scia_stop()
+              </script>
+            </td>
+            <td style="width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2303.08414">
+                <papertitle>From Local Binary Patterns to Pixel Difference Networks for Efficient Visual Representation Learning</papertitle>
+              </a>
+              <br>
+              <strong>Zhuo Su</strong>,
+              <a href="https://en.wikipedia.org/wiki/Matti_Pietik%C3%A4inen_(academic)">Matti Pietikäinen</a>, 
+              <a href="http://lilyliliu.com/">Li Liu</a>
+              <br>
+              <em>SCIA (Scandinavian Conference on Image Analysis)</em>, 2023
+              <br>
+              <a href="https://arxiv.org/abs/2303.08414">arxiv</a>
+              <p></p>
+              <p>A brief survey on Local Binary Pattern (LBP) inspired Deep Learning networks.
+              </p>
+            </td>
+          </tr>		
+
           <tr onmouseout="svnet_stop()" onmouseover="svnet_start()">
             <td style="width:25%;vertical-align:middle">
               <div class="one">
