@@ -84,6 +84,45 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="pami_stop()" onmouseover="pami_start()">
+            <td style="width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='pami_image'>
+                  <img src='images/pami_after.png' width=90%></div>
+                <img src='images/pami_before.png' width=90%>
+              </div>
+              <script type="text/javascript">
+                function pami_start() {
+                  document.getElementById('pami_image').style.opacity = "1";
+                }
+
+                function pami_stop() {
+                  document.getElementById('pami_image').style.opacity = "0";
+                }
+                pami_stop()
+              </script>
+            </td>
+            <td style="width:75%;vertical-align:middle">
+              <a href="">
+                <papertitle>Lightweight Pixel Difference Networks for Efficient Visual Representation Learning</papertitle>
+              </a>
+              <br>
+              <strong>Zhuo Su</strong>,
+              <a href="https://scholar.google.com/citations?user=UIbAv3wAAAAJ&hl=en">Jiehua Zhang</a>,
+              <a href="https://longguangwang.github.io/">Longguang Wang</a>,
+              <a href="https://visionhzhang.github.io/">Hua Zhang</a>,
+              <a href="">Zhen Liu</a>,
+              <a href="https://en.wikipedia.org/wiki/Matti_Pietik%C3%A4inen_(academic)">Matti Pietikäinen</a>, 
+              <a href="http://lilyliliu.com/">Li Liu</a>
+              <br>
+              <em>In submission to (TPAMI), major revision</em>, 2023
+              <br>
+              <p></p>
+              <p>Efficient networks for edge detection, object classification, and facial recognition.
+              </p>
+            </td>
+          </tr>		
+
           <tr onmouseout="scia_stop()" onmouseover="scia_start()">
             <td style="width:25%;vertical-align:middle">
               <div class="one">
