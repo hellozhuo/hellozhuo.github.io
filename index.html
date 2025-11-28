@@ -101,7 +101,7 @@
                 <li>[10.2018 - 10.2023] Doctoral researcher in Computer Science at University of Oulu, supervised by Li Liu.</li>
                 <li>[09.2022 - 03.2023] Computer vision intern at Intel Labs, Germany, working with <a href="https://matthias.pw/">Matthias Müller</a>.</li>
                 <li>[10.2021 - 03.2022] Visiting researcher in AMLab, University of Amsterdam, supervised by <a href="https://staff.fnwi.uva.nl/m.welling/">Max Welling</a>.</li>
-                <li><span style="color:blue">[10.2018 - precent]</span> PhD candidate of Computer vision in University of Oulu.</li>
+                <li><span style="color:blue">[10.2018 - 11.2023]</span> PhD candidate of Computer vision in University of Oulu.</li>
                 <li>[05.2018 - 07.2018] Software engineer in Samsung R&#38;D Institute, China-Beijing.</li>
                 <li>[01.2018 - 04.2018] Computer vision intern in Aihujing.com.</li>
                 <li><span style="color:blue">[09.2015 - 03.2018]</span> Master student in Beihang University (thesis: Salient object detection for single images, supervisor: Hong Zheng).</li>
@@ -121,6 +121,48 @@
         </tbody></table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="pami2_stop()" onmouseover="pami2_start()">
+            <td style="width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='pami2_image'>
+                  <img src='images/pami2_after.png' width=90%></div>
+                <img src='images/pami2_before.pjg' width=90%>
+              </div>
+              <script type="text/javascript">
+                function pami2_start() {
+                  document.getElementById('pami2_image').style.opacity = "1";
+                }
+
+                function pami2_stop() {
+                  document.getElementById('pami2_image').style.opacity = "0";
+                }
+                pami2_stop()
+              </script>
+            </td>
+            <td style="width:75%;vertical-align:middle">
+              <a href="https://ieeexplore.ieee.org/abstract/document/11072100">
+                <papertitle>Rapid Salient Object Detection With Difference Convolutional Neural Networks</papertitle>
+              </a>
+              <br>
+              <strong>Zhuo Su</strong>,
+              <a href="http://lilyliliu.com/">Li Liu</a>,
+              <a href="https://matthias.pw/">Matthias Müller</a>,
+              <a href="https://scholar.google.com/citations?user=UIbAv3wAAAAJ&hl=en">Jiehua Zhang</a>,
+              <a>Diana Wofk</a>,
+              <a href="https://mmcheng.net/cmm/">Ming-Ming Cheng</a>,
+              <a href="https://en.wikipedia.org/wiki/Matti_Pietik%C3%A4inen_(academic)">Matti Pietikäinen</a> 
+              <br>
+              <em>TPAMI (IEEE Transactions on Pattern Analysis and Machine Intelligence)</em>, 2025
+              <br>
+              <a href="https://arxiv.org/abs/2507.01182">arxiv</a>
+              /
+              <a href="https://github.com/hellozhuo/stdnet">code</a>
+              <p></p>
+              <p>Efficient neural network backbones, Pixel difference convolution, Image/Video salient object detection.
+              </p>
+            </td>
+          </tr>		
 
           <tr onmouseout="tnnls_stop()" onmouseover="tnnls_start()">
             <td style="width:25%;vertical-align:middle">
@@ -268,7 +310,7 @@
               <br>
               <a href="https://arxiv.org/abs/2209.05924">arxiv</a>
               /
-              <a href="https://github.com/zhuoinoulu/svnet">code</a>
+              <a href="https://github.com/hellozhuo/svnet">code</a>
               <p></p>
               <p>SVNet is a general framework to construct 3D learning architectures with SO(3) equivariance and network binarization, with a novel dual use of scalar and vector features.
               </p>
@@ -311,7 +353,7 @@
               <br>
               <a href="https://arxiv.org/abs/2108.07009">arxiv</a>
               /
-              <a href="https://github.com/zhuoinoulu/pidinet">code</a>
+              <a href="https://github.com/hellozhuo/pidinet">code</a>
               <p></p>
               <p>
               PDC embeds traditional Local Binary Pattern (LBP) to convolutional operators to enable CNNs probe rich image gradient information.
@@ -718,3 +760,7 @@
 </body>
 
 </html>
+
+
+
+
